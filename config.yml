@@ -1,8 +1,8 @@
 # AdvancedBan v2 - Coded by Leoko
-# For each setting, there is a small description.
-# Please read each description carefully before changing anything.
-# For more information visit: https://www.spigotmc.org/resources/advancedban.8695/
-# Do you want your own Plugin or Website? Check out our Dev-Page: http://dev.skamps.eu
+# 設定ごとに、簡単な説明があります。
+# 変更する前に、必ず各説明をお読みください。
+# 詳細については、右のWebサイトをご覧ください。: https://www.spigotmc.org/resources/advancedban.8695/
+# プラグインまたはWebサイトが必要ですか？ 開発ページをご覧ください: http://dev.skamps.eu
 
 # If set to false all bans will be saved locally in a HSQLDB-Database
 UseMySQL: false
