@@ -1,33 +1,31 @@
 General:
   Prefix: "&c&lAdvancedBan &8&l»"
-  NoPerms: "&cYou don't have perms for that!"
-  LayoutNotFound: "&cThere is no layout called %NAME%"
+  NoPerms: "&c十分な権限がありません!"
+  LayoutNotFound: "&c「%NAME%」というレイアウトは存在しません"
   # This will be the replacement for the %DURATION% variable
-  TimeLayoutD: "%D%day(s) %H%h %M%min and %S%sec"
-  TimeLayoutH: "%H%hour(s) %M%min and %S%sec"
-  TimeLayoutM: "%M%min and %S%sec"
-  TimeLayoutS: "%S% seconds"
-  FailedFetch: "&cCould not fetch the UUID of %NAME%! See console for details."
+  TimeLayoutD: "%D%日 %H%時間 %M%分 %S%秒"
+  TimeLayoutH: "%H%時間 %M%分 %S%秒"
+  TimeLayoutM: "%M%分 %S%秒"
+  TimeLayoutS: "%S%秒"
+  FailedFetch: "&c「%NAME%!」のUUIDのフェッチに失敗しました!詳しくはコンソールを確認してください"
 
 
 Ban:
-  Usage: "&cUsage &8» &7&o/ban (-s) [Name] [Reason/@Layout]"
-  Done: "&c&o%NAME% &7was successfully banned!"
-  AlreadyDone: "&c&o%NAME% &7has already been banned!"
-  Exempt: "&7You are not able to ban &c&o%NAME%"
+  Usage: "&c使用方法: &8» &7&o/ban (-s) [名前] [理由/レイアウト名]"
+  Done: "&c&o「%NAME%」&7は正常にBANされました!"
+  AlreadyDone: "&c&o「%NAME%」&7はすでにBANされています!"
+  Exempt: "&7あなたは&c&o「%NAME%」&7をBANできません"
   Layout:
-  - '%PREFIX% &7Permanently banned'
+  - '%PREFIX% &7無期限にBANされました'
   - '&7'
   - '&7'
-  - "&cReason &8» &7%REASON%"
+  - "&cBAN理由 &8» &7%REASON%"
   - '&7'
-  - '&8Unban application in TS or forum'
-  - "&eTS-Ip &8» &c&ncoming soon"
-  - "&eForum &8» &c&ncoming soon"
+  - '&8BAN解除のお問い合わせは公式Discordまで!'
   Notification:
-  - "&c&o%NAME% &7got banned by &e&o%OPERATOR%"
-  - "&7For the reason &o%REASON%"
-  UndoNotification: "&e&o%OPERATOR% &7unbanned &c&o%NAME%"
+  - "&c&o「%NAME%」&7は&e&o「%OPERATOR%」&7によってBANされました"
+  - "「&o%REASON%」&7のため"
+  UndoNotification: "&e&o「%OPERATOR%」&7が&c&o「%NAME%」&7をBAN解除しました"
 
 Ipban:
   Usage: "&cUsage &8» &7&o/banip (-s) [Name/IP] [Reason/@Layout]"
