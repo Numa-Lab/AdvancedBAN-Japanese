@@ -202,7 +202,7 @@ Banlist:
   - "&c%TYPE% &8> &7&o%REASON%"
   - "&7"
   Footer: "&7ページ &e&o%CURRENT_PAGE% &7of &e&o%TOTAL_PAGES% &8| &7BANリスト: &e&o%COUNT%"
-  PageFooter: "&7使う &e&o/banlist %NEXT_PAGE% &7をクリックすると、次のページが表示されます。"
+  PageFooter: "&7使用方法 &e&o/banlist %NEXT_PAGE% &7をクリックすると、次のページが表示されます。"
 
 History:
   Usage: "&c使用方法 &8» &7&o/history [名前/IP] <ページ>"
@@ -219,7 +219,7 @@ History:
   - "&c%TYPE% &8> &7&o%REASON%"
   - "&7"
   Footer: "&7ページ &e&o%CURRENT_PAGE% &7of &e&o%TOTAL_PAGES% &8| &7Total entries: &e&o%COUNT%"
-  PageFooter: "&7使う &e&o/history %NAME% %NEXT_PAGE% &7をクリックすると、次のページが表示されます。"
+  PageFooter: "&7使用方法 &e&o/history %NAME% %NEXT_PAGE% &7をクリックすると、次のページが表示されます。"
 
 Warns:
   Usage: "&c使用方法 &8» &7&o/warns [名前] <ページ> &cor &7&o/warns <ページ>"
@@ -236,7 +236,7 @@ Warns:
   - "&c&l#%ID% &8> &7&o%REASON%"
   - "&7"
   Footer: "&7ページ &e&o%CURRENT_PAGE% &7of &e&o%TOTAL_PAGES% &8| &7Active 警告: &e&o%COUNT%"
-  PageFooter: "&7使う &e&o/warns %NAME% %NEXT_PAGE% &7をクリックすると、次のページが表示されます。"
+  PageFooter: "&7使用方法 &e&o/warns %NAME% %NEXT_PAGE% &7をクリックすると、次のページが表示されます。"
 
 WarnsOwn:
   OutOfIndex: "&cページがありません %PAGE%!"
@@ -252,7 +252,7 @@ WarnsOwn:
     - "&c&l#%ID% &8> &7&o%REASON%"
     - "&7"
   Footer: "&7ページ &e&o%CURRENT_PAGE% &7of &e&o%TOTAL_PAGES% &8| &7アクティブな警告: &e&o%COUNT%"
-  PageFooter: "&7使う &e&o/warns %NEXT_PAGE% &7次ページへ"
+  PageFooter: "&7使用方法 &e&o/warns %NEXT_PAGE% &7次ページへ"
   
 Notes:
   Usage: "&c使用方法 &8» &7&o/notes [名前] <ページ> &cor &7&o/notes <ページ>"
