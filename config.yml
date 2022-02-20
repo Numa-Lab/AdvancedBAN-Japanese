@@ -1,10 +1,10 @@
 # AdvancedBan v2 - Coded by Leoko
-# For each setting, there is a small description.
-# Please read each description carefully before changing anything.
-# For more information visit: https://www.spigotmc.org/resources/advancedban.8695/
-# Do you want your own Plugin or Website? Check out our Dev-Page: http://dev.skamps.eu
+# 設定ごとに、簡単な説明があります。
+# 変更する前に、各説明を注意深くお読みください。
+# 詳細については　: https://www.spigotmc.org/resources/advancedban.8695/　をご覧ください
+# 開発ページはこちら: http://dev.skamps.eu
 
-# If set to false all bans will be saved locally in a HSQLDB-Database
+# falseに設定すると、SQLDBがローカルデータベースに保存されます
 UseMySQL: false
 
 MySQL:
@@ -15,25 +15,25 @@ MySQL:
   Port: 3306
   Properties: 'verifyServerCertificate=false&useSSL=false&useUnicode=true&characterEncoding=utf8'
 
-# Set to false if you want to have only short messages in the console
-# On startup and on the shutdown.
+# コンソールに短いメッセージのみを表示する場合は、falseに設定します
+# 起動時とシャットダウン時。
 DetailedEnableMessage: true
 DetailedDisableMessage: true
 
-# Whether to disallow connections to the server when there is an error
-# with the database. (e.g.: if your MySQL Server goes down)
+# エラーが発生したときにサーバーへの接続を禁止するかどうか
+# データベースを使用します。（例：MySQLサーバーがダウンした場合）
 LockdownOnError: true
 
-# This will be the default reason to be displayed if none is given
+# これは、何も指定されていない場合に表示されるデフォルトの理由になります
 DefaultReason: "none"
 
-# Change this if your server has a different time that your users.
-# e.g.: ServerTime: 16:43 | Your Time: 13:43 | TimeDiff has to be set to -3
-# You can check the server time with /systemPrefs
+# サーバーの時刻とユーザーの時刻が異なる場合は、ここを変更します。
+# 例: サーバーの時刻: 16:43 | あなたの時刻: 13:43 | TimeDiffは-3に設定する必要があります。
+# サーバー時間をコマンドで確認できます　: /systemPrefs
 TimeDiff: 0
 
-# This commands will be disabled for muted players
-# A player wouldn't be able to bypass with eg "/minecraft:me"
+# このコマンドは、ミュートされたプレーヤーに対して無効になります
+# プレーヤーは、 "/minecraft:me"　でバイパスすることはできません
 MuteCommands:
 - 'me'
 - 'say'
@@ -62,77 +62,81 @@ MuteCommands:
 - 'ehelpop'
 - 'p msg'
 
-# These players will not be able to get punished in any way
-# this also works if the player is offline
-# Use Vault to make exempt permissions also work for offline players
+# これらのプレイヤーはいかなる方法でも罰せられることはありません
+# これは、プレーヤーがオフラインの場合にも機能します
+# Vaultを使用して、オフラインプレーヤーでも免除権限が機能するようにします
 ExemptPlayers:
 - 'Leoko'
 - 'md5'
 - 'dutchy1001'
 - 'ItzSomebody'
 
-# The date-format which will be used for the %DATE% variable
+# %DATE% 変数に使用される日付形式
 DateFormat: "dd.MM.yyyy-HH:mm"
 
-# This is useful for bungeecord servers or server with permission systems which do not support *-Perms
-# So if you enable this you can use ab.all instead of ab.* or ab.ban.all instead of ab.ban.*
-# This does not work with negative permissions! e.g. -ab.all would not block all commands for that user.
+# これは、bungeecord serversもしくは、サポートされていないパーミッションシステムを備えたサーバーに役立ちます *-Perms
+# したがって、これを有効にすると、ab.*の代わりにab.allを使用したり、ab.ban.*の代わりにab.ban.allを使用したりできます。
+# 否定的な権限では機能しません！たとえば、-ab.allは、そのユーザーのすべてのコマンドをブロックしません。
 EnableAllPermissionNodes: false
 
-# If you use external REST-APIs they will have to respond in JSON
-# The given APIs will only be used for NAME -> UUID
-# For UUID -> NAME will either use the official MojangAPI or the InternFetcher
-# To check if you can use the intern fetcher do /systemPerfs and compare your uuid
-#   to the one you can see online on http://NamesMC.com
-#   if they are similar we recommend using the InternFetcher
+# 外部REST-APIを使用する場合、JSONで応答する必要があります
+# 指定されたAPIは、NAME-> UUIDにのみ使用されます
+# UUID-> NAMEの場合、公式のMojangAPIまたはInternFetcherのいずれかを使用します
+# インターンフェッチャーを使用できるかどうかを確認するには、/systemPerfsを実行してuuidを比較します
+# http://NamesMC.com でオンラインで見ることができるものに
+# 類似している場合は、InternFetcherを使用することをお勧めします
 UUID-Fetcher:
-  # If dynamic it set to true it will override the 'enabled' and 'intern' settings
-  # and automatically detect the best possible uuid fetcher settings for your server.
-  # Our recommendation: don't set dynamic to false if you don't have any problems.
+  # 動的にtrueに設定すると、「有効」および「インターン」設定が上書きされます
+  # サーバーに最適なuuidフェッチャー設定を自動的に検出します。
+  # 推奨事項：問題がない場合は、動的をfalseに設定しないでください。
+  # 動的
   Dynamic: true
+  # 有効
   Enabled: true
+  # インターン
   Intern: false
   REST-API:
     URL: "https://api.mojang.com/users/profiles/minecraft/%NAME%?at=%TIMESTAMP%"
     Key: "id"
+  # バックアップAPI
   BackUp-API:
     URL: "https://us.mc-api.net/v3/uuid/%NAME%"
     Key: "uuid"
 
-# These are the commands that will be performed on warns
-# If you skip a number the command from before will be performed
-# You can also use non-AdvancedBan-Commands like 'broadcast' or 'clear %PLAYER%
-# Variables: %PLAYER%, %REASON%, %COUNT%
+# これらは警告に対して実行されるコマンドです
+# 番号をスキップすると、前のコマンドが実行されます
+# 'broadcast' or 'clear %PLAYER%　などのAdvancedBan以外のコマンドを使用することもできます
+# 変数: %PLAYER%, %REASON%, %COUNT%
 WarnActions:
-  3: "kick %PLAYER% &c&oYou have received your 3rd warning!"
-  4: "tempban %PLAYER% 30m &c&oYou have received your 4th warning!"
-  5: "tempban %PLAYER% 5h &c&oYou have received your 5th warning!"
-  6: "tempban %PLAYER% 7d &c&oYou have received your 6th warning!"
-  7: "tempban %PLAYER% 1mo &c&oYou have received your %COUNT%th warning!"
-  10: "ban %PLAYER% &c&oYou have received your 10th warning!"
+  3: "kick %PLAYER% &c&oあなたは3回目の警告を受けました！!"
+  4: "tempban %PLAYER% 30m &c&o4回目の警告を受け取りました！"
+  5: "tempban %PLAYER% 5h &c&o5回目の警告を受け取りました！"
+  6: "tempban %PLAYER% 7d &c&o6回目の警告を受け取りました！"
+  7: "tempban %PLAYER% 1mo &c&o%COUNT%番目の警告を受け取りました！"
+  10: "ban %PLAYER% &c&o10回目の警告を受け取りました!"
 
-# Here you can create permission-nodes for max-punishment-duration.
-# The permission "ab.tempban.dur.1" would allow the player to ban max. for 600sec = 10min
-# The permission "ab.tempwarn.dur.2" would allow the player to warn max. for 3600sec = 1h
-# You can only create up to 10 perms. The perms can be overridden with "ab.COMMAND.dur.max"
+# ここでは、max-punishment-durationのpermission-nodesを作成できます。
+# 許可「ab.tempban.dur.1」は、プレーヤーが最大禁止することを許可します。600秒= 10分
+# 許可「ab.tempwarn.dur.2」により、プレーヤーは最大で警告することができます。3600秒= 1時間
+# 作成できるパーマは10個までです。パーマは「ab.COMMAND.dur.max」で上書きできます
 TempPerms:
   1: 600
   2: 3600
   3: 43200
 
-# With this active will show more information in the console, such as errors, if
-# the plugin works correctly is not recommended to activate it since it is 
-# designed to find bugs.
+# これをアクティブにすると、エラーなどの詳細情報がコンソールに表示されます。
+# プラグインが正しく機能するため、プラグインをアクティブ化することはお勧めしません
+# バグを見つけるために設計されています。
 Debug: false
 
-# This is the amount of days that we should keep plugin logs in the plugins/AdvancedBan/logs folder.
-# By default is set to 10 days.
+# これは plugins/AdvancedBan/logs フォルダーにプラグインログを保持する必要がある日数です。
+# デフォルトでは10日に設定されています。
 Log Purge Days: 10
 
-# Removes the prefix of the plugin in every message.
+# すべてのメッセージでプラグインのプレフィックスを削除します。
 Disable Prefix: false
 
-# Register commands in a more friendly manner
-# Off by default, so AdvancedBan can override /ban from other plugins
-# This is a Bukkit-specific option. It has no meaning on BungeeCord
+# よりわかりやすい方法でコマンドを登録する
+# デフォルトでオフになっているため、AdvancedBanは他のプラグインからの /ban をオーバーライドできます
+# これはBukkit固有のオプションです。BungeeCordでは意味がありません
 Friendly Register Commands: false
