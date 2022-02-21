@@ -21,170 +21,164 @@ Ban:
   - '&7'
   - "&cBAN理由 &8» &7%REASON%"
   - '&7'
-  - '&8BAN解除のお問い合わせは公式Discordまで!'
+  - '&8BAN解除のお問い合わせは公式Discordまで'
   Notification:
   - "&c&o「%NAME%」&7は&e&o「%OPERATOR%」&7によってBANされました"
   - "「&o%REASON%」&7のため"
   UndoNotification: "&e&o「%OPERATOR%」&7が&c&o「%NAME%」&7をBAN解除しました"
 
 Ipban:
-  Usage: "&cUsage &8» &7&o/banip (-s) [Name/IP] [Reason/@Layout]"
+  Usage: "&c使用方法 &8» &7&o/banip (-s) [Name/IP] [Reason/@Layout]"
   Layout:
-  - '%PREFIX% &7Permanently banned'
+  - '%PREFIX% &7永久BAN'
   - '&7'
   - '&7'
   - "&cReason &8» &7%REASON%"
   - '&7'
-  - '&8Unban application in TS or forum'
-  - "&eTS-Ip &8» &c&ncoming soon"
-  - "&eForum &8» &c&ncoming soon"
+  - '&8BAN解除のお問い合わせは公式Discordまで'
   Notification:
-  - "&c&o%NAME% &7got banned by &e&o%OPERATOR%"
-  - "&7For the reason &o%REASON%"
-  IpNotCashed: "&cThere is no saved IP for %NAME%!"
+  - "&c&o%NAME%&7は&e&o%OPERATOR%&7によってBANされました"
+  - "&7理由：&o%REASON%"
+  IpNotCashed: "%NAME%&7の保存されたIPはありません"
 
 Tempban:
-  Usage: "&cUsage &8» &7&o/tempban (-s) [Name] [Xmo/Xd/Xh/Xm/Xs/#TimeLayout] [Reason/@Layout]"
-  MaxDuration: "&cYou are not able to ban more than %MAX%sec"
+  Usage: "&c使用方法 &8» &7&o/tempban (-s) [Name] [Xmo/Xd/Xh/Xm/Xs/#TimeLayout] [Reason/@Layout]"
+  MaxDuration: "%MAX%秒&cを超えてBANすることはできません"
   Layout:
-  - '%PREFIX% &7Temporarily banned'
+  - '%PREFIX% &7一時的にBANされた'
   - '&7'
   - '&7'
-  - "&cReason &8» &7%REASON%"
-  - "&cDuration &8» &7%DURATION%"
+  - "&c理由 &8» &7%REASON%"
+  - "&c期間 &8» &7%DURATION%"
   - '&7'
-  - '&8Unban application in TS or forum'
-  - "&eTS-Ip &8» &c&ncoming soon"
-  - "&eForum &8» &c&ncoming soon"
+  - '&8BAN解除のお問い合わせは公式Discordまで'
   Notification:
-  - "&c&o%NAME% &7got banned by &e&o%OPERATOR%"
-  - "&7For the reason &o%REASON%"
-  - "&7&oThis player got banned for &e&o%DURATION%"
+  - "&c&o%NAME%&7は&e&o%OPERATOR%&7によってBANされました"
+  - "&7理由：&o%REASON%"
+  - "&7&oこのプレイヤーのBAN期間：&e&o%DURATION%"
 
 Tempipban:
-  Usage: "&cUsage &8» &7&o/tempipban (-s) [Name/IP] [Xmo/Xd/Xh/Xm/Xs/#TimeLayout] [Reason/@Layout]"
-  MaxDuration: "&cYou are not able to ban more than %MAX%sec"
+  Usage: "&c使用方法 &8» &7&o/tempipban (-s) [Name/IP] [Xmo/Xd/Xh/Xm/Xs/#TimeLayout] [Reason/@Layout]"
+  MaxDuration: "%MAX%秒&cを超えてBANすることはできません"
   Layout:
-  - '%PREFIX% &7Temporarily banned'
+  - '%PREFIX% &7一時的にBANされた'
   - '&7'
   - '&7'
-  - "&cReason &8» &7%REASON%"
-  - "&cDuration &8» &7%DURATION%"
+  - "&c理由 &8» &7%REASON%"
+  - "&c期間 &8» &7%DURATION%"
   - '&7'
-  - '&8Unban application in TS or forum'
-  - "&eTS-Ip &8» &c&ncoming soon"
-  - "&eForum &8» &c&ncoming soon"
+  - '&8BAN解除のお問い合わせは公式Discordまで'
   Notification:
-  - "&c&o%NAME% &7got banned by &e&o%OPERATOR%"
-  - "&7For the reason &o%REASON%"
-  - "&7&oThis player got banned for &e&o%DURATION%"
+  - "&c&o%NAME%&7は&e&o%OPERATOR%&7によってBANされました"
+  - "&7理由：&o%REASON%"
+  - "&7&oこのプレイヤーのBAN期間：&e&o%DURATION%"
 
 Mute:
-  Usage: "&cUsage &8» &7&o/mute (-s) [Name] [Reason/@Layout]"
-  Done: "&c&o%NAME% &7was successfully muted!"
-  AlreadyDone: "&c&o%NAME% &7has already been muted!"
-  Exempt: "&7You are not able to mute &c&o%NAME%"
+  Usage: "&c使用方法 &8» &7&o/mute (-s) [Name] [Reason/@Layout]"
+  Done: "&c&o%NAME%&7をミュートしました"
+  AlreadyDone: "&c&o%NAME%&7は既にミュートにされています"
+  Exempt: "&7あなたは&c&o%NAME%&7をミュートすることはできません"
   Layout:
-  - '%PREFIX% &7You are permanently muted'
-  - "&cReason &8» &7%REASON%"
+  - '%PREFIX%&7あなたは永久にミュートされました'
+  - "&c理由 &8» &7%REASON%"
   Notification:
-  - "&c&o%NAME% &7got muted by &e&o%OPERATOR%"
-  - "&7For the reason &o%REASON%"
-  UndoNotification: "&e&o%OPERATOR% &7unmuted &c&o%NAME%"
+  - "&c&o%NAME%&7は&e&o%OPERATOR%&7によってミュートされました"
+  - "&7理由：&o%REASON%"
+  UndoNotification: "&e&o%OPERATOR%&7は&c&o%NAME%&7のミュートを解除しました"
 
 Tempmute:
-  Usage: "&cUsage &8» &7&o/tempmute (-s) [Name] [Xmo/Xd/Xh/Xm/Xs/#TimeLayout] [Reason/@Layout]"
-  MaxDuration: "&cYou are not able to mute more than %MAX%sec"
+  Usage: "&c使用方法 &8» &7&o/tempmute (-s) [Name] [Xmo/Xd/Xh/Xm/Xs/#TimeLayout] [Reason/@Layout]"
+  MaxDuration: "%MAX%秒&cを超えてミュートすることはできません"
   Layout:
-  - '%PREFIX% &7You are muted for %DURATION%'
-  - "&cReason &8» &7%REASON%"
+  - '%PREFIX% &7ミュートされてます %DURATION%'
+  - "&c理由 &8» &7%REASON%"
   Notification:
-  - "&c&o%NAME% &7got muted by &e&o%OPERATOR%"
-  - "&7For the reason &o%REASON%"
-  - "&7&oThis player got muted for &e&o%DURATION%"
+  - "&c&o%NAME%&7は&e&o%OPERATOR%&7によってミュートされました"
+  - "&7理由：&o%REASON%"
+  - "&7&oミュート期間：&e&o%DURATION%"
 
 Warn:
-  Usage: "&cUsage &8» &7&o/warn (-s) [Name] [Reason/@Layout]"
-  Done: "&c&o%NAME% &7was successfully warned!"
-  Exempt: "&7You are not able to warn &c&o%NAME%"
+  Usage: "&c使用方法 &8» &7&o/warn (-s) [Name] [Reason/@Layout]"
+  Done: "&c&o%NAME%&7に警告しました"
+  Exempt: "&7あなたは&c&o%NAME%&7に警告することはできません"
   Layout:
-  - '%PREFIX% &cYou received a warning'
-  - "&cReason &8» &7%REASON%"
-  - '&7You have now &c&o%COUNT% &7warning(s) in total!'
+  - '%PREFIX% &c警告'
+  - "&c理由 &8» &7%REASON%"
+  - '&7あなたは&c&o%COUNT%&7回合計で警告を受けました'
   Notification:
-  - "&c&o%NAME% &7got warned by &e&o%OPERATOR%"
-  - "&7For the reason &o%REASON%"
+  - "&c&o%NAME%&7は&e&o%OPERATOR%&7によって警告されました"
+  - "&7理由：&o%REASON%"
 
 Note:
-  Usage: "&cUsage &8» &7&o/note (-s) [Name] [Reason]"
-  Done: "&c&o%NAME% &7was successfully noted!"
-  Exempt: "&7You are not able to note &c&o%NAME%"
+  Usage: "&c使用方法 &8» &7&o/note (-s) [Name] [Reason]"
+  Done: "&c&o%NAME%&7に通達しました"
+  Exempt: "&7あなたは&c&o%NAME%&7に通達することはできません"
   Notification:
-  - "&c&o%NAME% &7got noted by &e&o%OPERATOR%"
-  - "&7For the reason &o%REASON%"
+  - "&c&o%NAME%&7は&e&o%OPERATOR%&7に通達しました"
+  - "&7理由：&o%REASON%"
 
 Tempwarn:
-  Usage: "&cUsage &8» &7&o/tempwarn (-s) [Name] [Xmo/Xd/Xh/Xm/Xs/#TimeLayout] [Reason/@Layout]"
-  MaxDuration: "&cYou are not able to warn more than %MAX%sec"
+  Usage: "&c使用方法 &8» &7&o/tempwarn (-s) [Name] [Xmo/Xd/Xh/Xm/Xs/#TimeLayout] [Reason/@Layout]"
+  MaxDuration: "&c%MAX%秒&cを超えて警告することはできません"
   Layout:
-  - '%PREFIX% &cYou received a temp-warning'
-  - "&cReason &8» &7%REASON%"
-  - "&cIt will pass in &8» &7%DURATION%"
-  - '&7You have now &c&o%COUNT% &7warning(s) in total!'
+  - '%PREFIX% &cあなたは一時的な警告を受け取りました'
+  - "&c理由： &8» &7%REASON%"
+  - "&c通過するまで &8» &7%DURATION%"
+  - '&7あなたは&c&o%COUNT%&7回合計で警告を受けました'
   Notification:
-  - "&c&o%NAME% &7got temp-warned by &e&o%OPERATOR%"
-  - "&7For the reason &o%REASON%"
-  - "&7This warning will pass in &o%DURATION%"
+  - "&c&o%NAME%&7は&e&o%OPERATOR%&7によって一時的な警告をされました"
+  - "&7理由：&o%REASON%"
+  - "&7この警告が通過するまで：&o%DURATION%"
 
 Kick:
-  Usage: "&cUsage &8» &7&o/kick (-s) [Name] [Reason/@Layout]"
-  Done: "&c&o%NAME% &7was successfully kicked!"
-  NotOnline: "&c&o%NAME% &7is not online!"
-  Exempt: "&7You are not able to kick &c&o%NAME%"
+  Usage: "&c使用方法 &8» &7&o/kick (-s) [Name] [Reason/@Layout]"
+  Done: "&c&o%NAME%&7を警告しました"
+  NotOnline: "&c&o%NAME%&7はオンラインでありません"
+  Exempt: "&7あなたは&c&o%NAME%&7をキックすることができません"
   Layout:
-  - '%PREFIX% &7You got kicked'
+  - '%PREFIX% &7あなたはキックされました'
   - '&7'
-  - "&cReason &8» &7%REASON%"
+  - "&c理由 &8» &7%REASON%"
   - '&7'
   Notification:
-  - "&c&o%NAME% &7got kicked by &e&o%OPERATOR%"
-  - "&7For the reason &o%REASON%"
+  - "&c&o%NAME%&7は&e&o%OPERATOR%&7によってキックされました"
+  - "&7理由：&o%REASON%"
 
 
 UnBan:
-  Usage: "&cUsage &8» &7&o/unban [Name/IP]"
-  NotPunished: "&c&o%NAME% is not banned!"
-  Done: "&a&o%NAME% &7was successfully unbanned!"
-  Notification: "&e&o%OPERATOR% &7unbanned &c&o%NAME%"
+  Usage: "&c使用方法 &8» &7&o/unban [Name/IP]"
+  NotPunished: "&c&o%NAME%はBANされていません"
+  Done: "&a&o%NAME%&7をBAN解除しました"
+  Notification: "&e&o%OPERATOR%&7は&c&o%NAME%&7のBANを解除しました"
 
 UnMute:
-  Usage: "&cUsage &8» &7&o/unmute [Name]"
-  NotPunished: "&c&o%NAME% is not muted!"
-  Done: "&a&o%NAME% &7was successfully unmuted!"
-  Notification: "&e&o%OPERATOR% &7unmuted &c&o%NAME%"
+  Usage: "&c使用方法 &8» &7&o/unmute [Name]"
+  NotPunished: "&c&o%NAME%はミュートされていません"
+  Done: "&a&o%NAME%&7をミュート解除しました"
+  Notification: "&e&o%OPERATOR%&7は&c&o%NAME%&7のミュートを解除しました"
 
 UnWarn:
-  Usage: "&cUsage &8» &7&o/unwarn [ID] or /unwarn clear [Name]"
-  NotFound: "&cCould not find warning #%ID%"
-  Done: "&7Warn &a&o#%ID% &7was successfully deleted!"
-  Notification: "&e&o%OPERATOR% &7unwarned &c&o%NAME%"
+  Usage: "&c使用方法 &8» &7&o/unwarn [ID] or /unwarn clear [Name]"
+  NotFound: "#%ID%&cの警告が見つかりません"
+  Done: "&7警告&a&o#%ID%&7を削除しました"
+  Notification: "&e&o%OPERATOR%&7は&c&o%NAME%&7の警告を解除しました"
   Clear:
-    Empty: "&c&o%NAME% &7has no warnings!"
-    Done: "&7Cleared &a&o%COUNT% &7warnings"
+    Empty: "&c&o%NAME%&7は警告を受けていません"
+    Done: "&a&o%COUNT%&7回の警告をクリアしました"
 
 UnNote:
-  Usage: "&cUsage &8» &7&o/unnote [ID] or /unnote clear [Name]"
-  NotFound: "&cCould not find note #%ID%"
-  Done: "&7Note &a&o#%ID% &7was successfully deleted!"
-  Notification: "&e&o%OPERATOR% &7unnoted &c&o%NAME%"
+  Usage: "&c使用方法 &8» &7&o/unnote [ID] or /unnote clear [Name]"
+  NotFound: "#%ID%&cの通達が見つかりません"
+  Done: "&7通達&a&o#%ID%&7を削除しました"
+  Notification: "&e&o%OPERATOR%&7は&c&o%NAME%&7の通達を解除しました"
   Clear:
-    Empty: "&c&o%NAME% &7has no notes!"
-    Done: "&7Cleared &a&o%COUNT% &7notes"
+    Empty: "&c&o%NAME%&7は通達を受けていません"
+    Done: "&a&o%COUNT%&7回の通達をクリアしました"
 
 UnPunish:
-  Usage: "&cUsage &8» &7&o/unpunish [ID]"
-  NotFound: "&cCould not find punishment #%ID%"
-  Done: "&7Punishment &a&o#%ID% &7was successfully deleted!"
+  Usage: "&c使用方法 &8» &7&o/unpunish [ID]"
+  NotFound: "#%ID%&cの処分が見つかりません"
+  Done: "&7P処分&a&o#%ID%&7を削除しました"
 
 
 Banlist:
