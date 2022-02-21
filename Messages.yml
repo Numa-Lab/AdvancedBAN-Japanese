@@ -48,7 +48,7 @@ Tempban:
   - '%PREFIX% &7一時的にBANされた'
   - '&7'
   - '&7'
-  - "&cR理由 &8» &7%REASON%"
+  - "&c理由 &8» &7%REASON%"
   - "&c期間 &8» &7%DURATION%"
   - '&7'
   - '&8BAN解除のお問い合わせは公式Discordまで'
@@ -82,7 +82,7 @@ Mute:
   - '%PREFIX%&7あなたは永久にミュートされました'
   - "&c理由 &8» &7%REASON%"
   Notification:
-  - "&c&o%NAME%&7は&e&o%OPERATOR%&7によってBANされました"
+  - "&c&o%NAME%&7は&e&o%OPERATOR%&7によってミュートされました"
   - "&7理由：&o%REASON%"
   UndoNotification: "&e&o%OPERATOR%&7は&c&o%NAME%&7のミュートを解除しました"
 
@@ -107,7 +107,7 @@ Warn:
   - '&7あなたは&c&o%COUNT%&7回合計で警告を受けました'
   Notification:
   - "&c&o%NAME%&7は&e&o%OPERATOR%&7によって警告されました"
-  - "&理由：&o%REASON%"
+  - "&7理由：&o%REASON%"
 
 Note:
   Usage: "&c使用方法 &8» &7&o/note (-s) [Name] [Reason]"
